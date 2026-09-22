@@ -1,5 +1,7 @@
 # Наруто — щоденник перегляду
 
+[Відкрити сайт](https://naruto-shchodennyk.rainseller.chatgpt.site) · Приватна публікація Sites для власника.
+
 Українська шпаргалка для перегляду «Наруто». Статичний сайт без серверної частини та обов’язкових залежностей.
 
 ## Можливості
@@ -54,7 +56,7 @@ The Last стоїть після «Шіппудена» № 493 і перед �
 
 Вміст `dist/` — готовий сайт, збірка не потрібна. Відносні посилання дозволяють розмістити його в корені або підкаталозі.
 
-Репозиторій містить workflow `.github/workflows/pages.yml`. Для GitHub Pages оберіть **Settings → Pages → Source → GitHub Actions**, потім запустіть **Deploy to GitHub Pages** або зробіть push у `main`. Workflow не змінює доступ до репозиторію.
+Репозиторій містить workflow `.github/workflows/pages.yml`. Для GitHub Pages оберіть **Settings → Pages → Source → GitHub Actions**, потім вручну запустіть **Check site and deploy to GitHub Pages**. Push у `main` запускає перевірки; розгортання Pages виконується лише за ручним запуском, бо в новому репозиторії Pages спочатку вимкнено. Workflow не змінює доступ до репозиторію.
 
 `.openai/hosting.json` містить ідентифікатор окремої публікації Sites; секретів там немає. Для власної копії достатньо `dist/` — прив’язка до Sites не потрібна.
 
