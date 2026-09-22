@@ -1,0 +1,13 @@
+{
+  "name": "naruto-cheatsheet",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Українська шпаргалка для перегляду Наруто",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check dist/app.js && node --check dist/data.js && node --check dist/progress.js"
+  },
+  "engines": { "node": ">=22" }
+}

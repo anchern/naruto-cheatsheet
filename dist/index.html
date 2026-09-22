@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111318">
+    <meta name="description" content="Українська шпаргалка Наруто: усі серії, філери та спіноф, сюжетний порядок із фільмом The Last і відмітки перегляду.">
+    <title>Наруто — щоденник перегляду</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23ff7847'/%3E%3Cpath d='M11 29V11h4l10 12V11h4v18h-4L15 17v12z' fill='%23111318'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="./styles.css">
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">До вмісту</a>
+    <header class="site-header">
+      <a class="brand" href="#catalog" aria-label="Наруто — каталог серій"><span class="brand-mark" aria-hidden="true">N</span><span>НАРУТО<span class="brand-caption">ЩОДЕННИК ПЕРЕГЛЯДУ</span></span></a>
+      <div class="header-note"><span class="line-symbol" aria-hidden="true">一</span> Ваша історія шинобі</div>
+      <a class="github-link" href="https://github.com/anchern/naruto-cheatsheet" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+    </header>
+    <main id="main" tabindex="-1">
+      <section class="intro" aria-label="Огляд">
+        <div><p class="eyebrow">ВІД ПЕРШОЇ МІСІЇ ДО ФІНАЛУ</p><h1 id="page-title">Каталог серій<span class="orange">.</span></h1><p id="page-subtitle" class="subtitle">Сюжет, філери та побічні історії — усе на своїх місцях.</p></div>
+        <div class="journey-progress"><div class="progress-heading"><span>Ваш сюжетний маршрут</span><strong id="overall-percent">0%</strong></div><div class="progress-track"><span id="overall-fill"></span></div><p id="overall-count">Завантаження прогресу…</p></div>
+      </section>
+      <nav class="page-nav" aria-label="Сторінки"><a href="#catalog" data-page="catalog"><span aria-hidden="true">▤</span> Каталог серій</a><a href="#story" data-page="story"><span aria-hidden="true">↳</span> Сюжетний маршрут</a></nav>
+      <div id="storage-notice" class="notice" role="alert" hidden></div>
+      <div id="page-content"></div>
+      <noscript><p class="notice">Для каталогу та збереження переглянутих серій увімкніть JavaScript у браузері.</p></noscript>
+      <footer class="site-footer"><span>Наруто. Одна історія, ваш темп.</span><span id="storage-label">Прогрес перегляду</span><button type="button" class="text-button" id="about-open">Про позначки та джерела ↗</button></footer>
+    </main>
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden><span id="toast-text"></span><button id="undo-button" type="button">Скасувати</button></div>
+    <dialog id="about-dialog" aria-labelledby="about-title"><div class="dialog-heading"><h2 id="about-title">Як читати шпаргалку</h2><button class="icon-button" id="about-close" aria-label="Закрити" type="button">✕</button></div><div id="about-body"></div></dialog>
+  </body>
+</html>
